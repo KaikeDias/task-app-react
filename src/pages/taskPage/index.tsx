@@ -1,10 +1,10 @@
 import { useReducer } from "react";
 import { ActionType, TaskState, tasksReducer } from "./reducers/taskReducer";
 import Task from "../../core/interfaces/task";
-import AddTask from "./components/addTask/AddTask";
 import TaskList from "./components/taskList";
 import { TasksContext, TasksDispatchContext } from "./context/taskContext";
-import { getNextId, setNextId } from "./utils/nextId";
+import { getNextId} from "./utils/nextId";
+import AddTask from "./components/addTask";
 
 const initialTasks: Task[] = [
   { id: 1, text: "Tarefa 1", isDone: false },
