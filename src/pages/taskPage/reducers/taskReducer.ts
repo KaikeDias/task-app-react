@@ -1,6 +1,6 @@
 import Task from "../../../core/interfaces/task";
 
-interface TaskState {
+export interface TaskState {
   tasks: Task[];
 }
 
@@ -16,7 +16,7 @@ type ActionDeleted = { type: ActionType.DELETED; payload: { id: number } };
 
 type Action = ActionAdded | ActionChanged | ActionDeleted;
 
-function tasksReducer(state: TaskState, action: Action): TaskState {
+export function tasksReducer(state: TaskState, action: Action): TaskState {
   switch (action.type) {
     case ActionType.ADDED: {
       return { tasks: [...state.tasks, action.payload] };
