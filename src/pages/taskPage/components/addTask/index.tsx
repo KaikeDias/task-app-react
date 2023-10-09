@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { TasksDispatchContext } from "../../context/taskContext";
 import { ActionType } from "../../reducers/taskReducer";
 import { getNextId} from "../../utils/nextId";
