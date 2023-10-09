@@ -18,7 +18,7 @@ export default function AddTask() {
       <button
         onClick={() => {
           const newTask = {
-            id: getNextId(), // Certifique-se de que nextId está definido e incrementado corretamente
+            id: getNextId(),
             text: text,
             isDone: false,
           };
@@ -28,7 +28,7 @@ export default function AddTask() {
             payload: newTask,
           });
 
-          setText(""); // Limpa o texto depois de adicionar a tarefa
+          setText("");
         }}
       >
         Add
