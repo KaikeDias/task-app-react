@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import './App.css'
 import { useAuth } from './hook/useAuth'
 import TaskPage from './pages/taskPage'
-import {BrowserRouter, NavLink, Outlet, Route, Routes} from "react-router-dom"
+import {BrowserRouter, NavLink, Route, Routes} from "react-router-dom"
 import Login from './pages/login'
 import { HomePage } from './pages/home'
 import ErrorPage from './pages/errorPage'
