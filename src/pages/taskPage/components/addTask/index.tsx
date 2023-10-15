@@ -1,11 +1,11 @@
 import { useContext, useState } from "react";
-import { TasksDispatchContext } from "../../context/taskContext";
+import { TasksDispatchContext } from "../../../../context/taskContext";
 import { ActionType } from "../../reducers/taskReducer";
-import { getNextId} from "../../utils/nextId";
+import { getNextId } from "../../utils/nextId";
 
 export default function AddTask() {
   const [text, setText] = useState("");
-  const dispatch = useContext(TasksDispatchContext)
+  const dispatch = useContext(TasksDispatchContext);
 
   return (
     <>

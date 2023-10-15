@@ -2,7 +2,7 @@ import { useReducer } from "react";
 import { TaskState, tasksReducer } from "./reducers/taskReducer";
 import Task from "../../core/interfaces/task";
 import TaskList from "./components/taskList";
-import { TasksContext, TasksDispatchContext } from "./context/taskContext";
+import { TasksContext, TasksDispatchContext } from "../../context/taskContext";
 import AddTask from "./components/addTask";
 
 const initialTasks: Task[] = [
@@ -12,7 +12,6 @@ const initialTasks: Task[] = [
 ];
 
 const initialTasksState: TaskState = { tasks: initialTasks };
-
 
 export default function TaskPage() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasksState);
